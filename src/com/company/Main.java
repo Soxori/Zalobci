@@ -18,6 +18,6 @@ public class Main {
             judges.add(new Judge(judge));
         }
         double castkaAvg = judges.stream().mapToDouble(j -> j.castka).average().getAsDouble();
-        System.out.println(Math.round(castkaAvg / 100));
+        System.out.println("Prumer castek: " + Math.round(castkaAvg / 100));
     }
 }
